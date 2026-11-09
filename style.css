@@ -51,6 +51,16 @@ ol.pubs li::before{content:counter(pub,decimal-leading-zero);color:var(--slate);
 .entry .where{color:var(--muted);}
 .card{padding:1.1rem 0;border-bottom:1px solid var(--line);}
 .note{color:var(--soft);font-size:.9rem;}
+.ic{width:1em;height:1em;vertical-align:-.14em;flex:0 0 auto;}
+nav a{display:inline-flex;align-items:center;gap:.4rem;}
+.links a{display:inline-flex;align-items:center;gap:.35rem;}
+h2{display:flex;align-items:center;gap:.5rem;}
+h2 .ic{width:1.05em;height:1.05em;}
+.flinks{display:inline-flex;gap:.9rem;font-size:1.15rem;}
+.flinks a{color:var(--pale);display:inline-flex;}
+.flinks a:hover{color:#fff;}
+li.ci{display:flex;align-items:center;gap:.5rem;}
+.cic{color:var(--navy);display:inline-flex;font-size:1.1rem;}
 footer{background:var(--navy-dk);color:var(--pale);font-size:.85rem;}
 footer .wrap{padding:1.3rem 1.25rem;display:flex;flex-wrap:wrap;gap:.3rem 1.4rem;justify-content:space-between;}
 footer a{color:var(--pale);}
