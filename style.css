@@ -1,0 +1,57 @@
+:root{--navy:#00205b;--navy-dk:#001337;--pale:#b2bbcd;--ink:#101214;--muted:#3f4145;--soft:#6e7175;--link:#165eb1;--line:#d5dae4;--chip:#f0f1f2;--slate:#596e94;}
+*{box-sizing:border-box;}
+html{-webkit-text-size-adjust:100%;}
+body{margin:0;background:#fff;color:var(--ink);font:16px/1.75 "Noto Sans JP","Segoe UI",Roboto,Helvetica,Arial,sans-serif;}
+a{color:var(--link);text-underline-offset:3px;}
+a:hover{text-decoration-thickness:2px;}
+.topbar{background:var(--navy);color:var(--pale);}
+.topbar .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:.4rem 1.5rem;padding:.9rem 1.25rem;}
+.site-name{color:#fff;font-weight:700;letter-spacing:.06em;text-decoration:none;font-size:1.05rem;}
+.site-name:hover{text-decoration:none;opacity:.9;}
+nav{display:flex;flex-wrap:wrap;gap:.2rem 1.4rem;font-size:.92rem;}
+nav a{color:var(--pale);text-decoration:none;padding:.15rem 0;border-bottom:2px solid transparent;}
+nav a:hover{color:#fff;}
+nav a.active{color:#fff;border-bottom-color:#fff;}
+.wrap{max-width:52rem;margin:0 auto;}
+main.wrap{padding:2.2rem 1.25rem 3rem;}
+.profile{display:flex;gap:1.6rem;align-items:center;padding-bottom:1.6rem;border-bottom:1px solid var(--line);margin-bottom:1.8rem;}
+.avatar{flex:0 0 132px;width:132px;height:132px;border-radius:50%;overflow:hidden;background:var(--navy);color:#fff;display:flex;align-items:center;justify-content:center;font-size:2.6rem;font-weight:700;letter-spacing:.04em;}
+.avatar img{width:100%;height:100%;object-fit:cover;display:block;}
+.avatar img ~ span{display:none;}
+.profile h1{margin:0;font-size:1.75rem;line-height:1.25;color:var(--navy);}
+.profile .role{margin:.2rem 0 0;color:var(--muted);font-size:1rem;}
+.profile .affil{margin:.1rem 0 .7rem;color:var(--soft);font-size:.92rem;}
+.links{display:flex;flex-wrap:wrap;gap:.45rem;}
+.links a{font-size:.82rem;text-decoration:none;color:var(--navy);border:1px solid var(--line);border-radius:999px;padding:.18rem .75rem;background:#fff;}
+.links a:hover{background:var(--navy);color:#fff;border-color:var(--navy);}
+h2{color:var(--navy);font-size:1.25rem;margin:2.2rem 0 .8rem;padding-bottom:.35rem;border-bottom:2px solid var(--navy);}
+h2:first-child{margin-top:0;}
+h3{font-size:1.08rem;margin:0 0 .35rem;color:var(--ink);}
+p{margin:0 0 1rem;}
+.tags{display:flex;flex-wrap:wrap;gap:.4rem;margin:.4rem 0 1rem;}
+.tags span{font-size:.8rem;background:var(--chip);border:1px solid var(--line);color:var(--navy);border-radius:4px;padding:.1rem .55rem;}
+.news{list-style:none;padding:0;margin:0;}
+.news li{display:grid;grid-template-columns:5.2rem 6.2rem 1fr;gap:.6rem;padding:.55rem 0;border-bottom:1px solid var(--line);align-items:baseline;}
+.news .date{color:var(--soft);font-size:.88rem;font-variant-numeric:tabular-nums;}
+.badge{display:inline-block;font-size:.72rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:#fff;background:var(--slate);border-radius:3px;padding:.05rem .45rem;text-align:center;}
+.news .badge{justify-self:start;}
+.badge.paper{background:var(--navy);}
+.badge.software{background:var(--link);}
+.plain{list-style:none;padding:0;margin:0;}
+.plain li{padding:.45rem 0;border-bottom:1px solid var(--line);}
+.topic{padding:1.2rem 0;border-bottom:1px solid var(--line);}
+.topic .num{color:var(--slate);font-size:.78rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;}
+.rep{font-size:.9rem;color:var(--muted);}
+ol.pubs{list-style:none;padding:0;margin:0;counter-reset:pub;}
+ol.pubs li{counter-increment:pub;display:grid;grid-template-columns:2.4rem 1fr;gap:.4rem;padding:.7rem 0;border-bottom:1px solid var(--line);}
+ol.pubs li::before{content:counter(pub,decimal-leading-zero);color:var(--slate);font-weight:700;font-size:.9rem;}
+.entry{padding:.65rem 0;border-bottom:1px solid var(--line);}
+.entry .when{color:var(--soft);font-size:.88rem;}
+.entry .what{font-weight:700;}
+.entry .where{color:var(--muted);}
+.card{padding:1.1rem 0;border-bottom:1px solid var(--line);}
+.note{color:var(--soft);font-size:.9rem;}
+footer{background:var(--navy-dk);color:var(--pale);font-size:.85rem;}
+footer .wrap{padding:1.3rem 1.25rem;display:flex;flex-wrap:wrap;gap:.3rem 1.4rem;justify-content:space-between;}
+footer a{color:var(--pale);}
+@media (max-width:600px){.profile{flex-direction:column;align-items:flex-start;}.avatar{width:104px;height:104px;flex-basis:104px;font-size:2rem;}.news li{grid-template-columns:1fr;gap:.15rem;}.profile h1{font-size:1.5rem;}}
